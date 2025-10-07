@@ -1,0 +1,5 @@
+{
+  "name": "Trợ lý Thiết kế Kiến trúc AI",
+  "description": "Một ứng dụng web để tạo ra các hình ảnh kiến trúc tuyệt đẹp từ bản vẽ 2D và mô tả văn bản bằng Gemini. Tải lên mặt bằng, mặt đứng, hình ảnh tham khảo và mô tả phong cách mong muốn của bạn để tạo ra các bản render chất lượng cao.",
+  "requestFramePermissions": []
+}

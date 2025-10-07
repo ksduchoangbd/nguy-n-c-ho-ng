@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trợ lý Thiết kế Kiến trúc AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://esm.sh/react-image-crop@11.0.5/dist/ReactCrop.css" />
+  <style>
+    /* Dark Mode Crop Styles (Default) */
+    .ReactCrop__rule-of-thirds-vt::before,
+    .ReactCrop__rule-of-thirds-vt::after,
+    .ReactCrop__rule-of-thirds-hz::before,
+    .ReactCrop__rule-of-thirds-hz::after {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    .ReactCrop__crop-selection {
+      border-width: 2px; /* Thicker border */
+      border-color: #0ea5e9; /* Sky-500, solid for better visibility */
+    }
+    .ReactCrop__drag-handle::after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Light Mode Crop Styles */
+    html:not(.dark) .ReactCrop__rule-of-thirds-vt::before,
+    html:not(.dark) .ReactCrop__rule-of-thirds-vt::after,
+    html:not(.dark) .ReactCrop__rule-of-thirds-hz::before,
+    html:not(.dark) .ReactCrop__rule-of-thirds-hz::after {
+      border-color: rgba(0, 0, 0, 0.4);
+    }
+     html:not(.dark) .ReactCrop__crop-selection {
+      border-color: #0284c7; /* Sky-600, slightly darker for contrast on light */
+    }
+    html:not(.dark) .ReactCrop__drag-handle::after {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-image-crop": "https://esm.sh/react-image-crop@11.0.5"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
